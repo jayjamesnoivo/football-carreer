@@ -106,7 +106,7 @@ The website provides detailed statistics for each club, including:
 
 **League:** Ligue de Soccer Amateur du Québec
 
-My LSAQ career includes two clubs:
+My LSAQ career includes 2 clubs:
 
 - **Rush FC** — 2026 season
 - **Montrealista FC** — 2027 season onward
