@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --green: #003b28;
+    --dark: #04150f;
+    --gold: #d8b34a;
+    --white: #ffffff;
+    --gray: #aab7b0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--dark);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    height: 80px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #031d14;
+    border-bottom: 1px solid #244b3b;
+}
+
+.logo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+    color: var(--gold);
+}
+
+.logo span {
+    color: white;
+}
+
+.header-text {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--gold);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 750px;
+    padding: 80px 7%;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 60px;
+    background: linear-gradient(120deg, #04150f, #00442d);
+}
+
+.subtitle {
+    color: var(--gold);
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.intro {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #a5c4b7;
+}
+
+.hero h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(60px, 6vw, 110px);
+    line-height: 0.9;
+    font-weight: 900;
+    margin: 25px 0 35px;
+}
+
+.hero h1 span,
+.section-heading h2 span,
+footer h2 span {
+    color: var(--gold);
+}
+
+.player-info {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.player-info span {
+    color: var(--gold);
+    margin: 0 15px;
+}
+
+.current-club {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #476052;
+    border-left: 3px solid var(--gold);
+    padding: 20px;
+    max-width: 390px;
+    background: rgba(255,255,255,0.04);
+}
+
+.current-club img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.current-club p {
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.current-club h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 26px;
+    margin: 8px 0;
+}
+
+.current-club small {
+    color: #b6d0c5;
+}
+
+.hero-buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 17px 25px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--gold);
+    color: black;
+}
+
+.btn-secondary {
+    border: 1px solid #6a8779;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: white;
+}
+
+.btn-secondary:hover {
+    background: var(--gold);
+    color: black;
+}
+
+/* HERO IMAGE */
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+    border: 1px solid #6d6743;
+}
+
+.image-label {
+    position: absolute;
+    bottom: -15px;
+    left: -25px;
+    padding: 18px 25px;
+    background: var(--gold);
+    color: black;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.image-label span {
+    margin-left: 20px;
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 110px 7%;
+}
+
+.section-heading {
+    margin-bottom: 60px;
+}
+
+.section-heading p {
+    color: var(--gold);
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 65px;
+    font-weight: 900;
+}
+
+/* PROFILE */
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.profile-details h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid #28483a;
+}
+
+.detail span {
+    color: var(--gray);
+}
+
+.detail strong {
+    color: white;
+}
+
+/* CAREER */
+
+.career-section {
+    background: #08271b;
+}
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.club-card {
+    background: #041a12;
+    padding: 35px;
+    border: 1px solid #244a38;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.club-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+}
+
+.club-card img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+
+.club-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.club-card p {
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+
+.club-card span {
+    font-size: 11px;
+    color: #a8bfb4;
+    letter-spacing: 1px;
+}
+
+.club-card.current {
+    border: 2px solid var(--gold);
+}
+
+.club-placeholder {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    color: var(--gold);
+}
+
+/* STATISTICS */
+
+.stats-container {
+    display: grid;
+    gap: 35px;
+}
+
+.stats-card {
+    background: #09271b;
+    padding: 35px;
+    border: 1px solid #315443;
+}
+
+.stats-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.stats-card p {
+    color: var(--gold);
+    margin-bottom: 25px;
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stats-table th {
+    background: #003b28;
+    color: var(--gold);
+    padding: 16px;
+    font-size: 12px;
+}
+
+.stats-table td {
+    text-align: center;
+    padding: 16px;
+    border-bottom: 1px solid #315443;
+}
+
+.stats-table tr:last-child {
+    font-weight: 800;
+    color: var(--gold);
+}
+
+/* COMPETITIONS */
+
+.competitions-section {
+    background: #08271b;
+}
+
+.competition-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.competition-card {
+    background: #041a12;
+    padding: 35px;
+    border: 1px solid #315443;
+}
+
+.competition-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 35px;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.competition-card p {
+    margin-bottom: 15px;
+}
+
+.competition-card span {
+    display: block;
+    color: #a6bfb3;
+    margin-bottom: 20px;
+}
+
+.competition-card a {
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* GALLERY */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* FOOTER */
+
+footer {
+    background: #031d14;
+    padding: 70px 7%;
+    text-align: center;
+    border-top: 1px solid #315443;
+}
+
+footer h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: #a9c2b5;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1000px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .career-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width: 650px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .header-text {
+        font-size: 8px;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero-image img {
+        height: 420px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .section {
+        padding: 70px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 45px;
+    }
+
+    .career-grid,
+    .competition-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-card {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .stats-table {
+        min-width: 500px;
+    }
+
+}
