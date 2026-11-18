@@ -10,11 +10,13 @@ Built with a professional design inspired by the official colors of **Montrealis
 
 ---
 
-## 🌐 Official Website
+## 🌐 Official Football Career Website
 
-**Visit my football career website:**
+Explore my football journey, career statistics, clubs, competitions and photo gallery.
 
-[Jeremy-James Noivo | Official Football Website](https://jayjamesnoivo.github.io/football-carreer/)
+### ⚽ [CLICK HERE TO VISIT MY OFFICIAL WEBSITE](https://jayjamesnoivo.github.io/football-carreer/)
+
+🇵🇹 Jeremy-James Noivo | Striker | #7 | Montrealista FC
 
 ---
 
